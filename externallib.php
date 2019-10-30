@@ -17,24 +17,24 @@
 /**
  * External Web Service Template
  *
- * @package    	local
- * @subpackage 	local_ildsessioncheck
- * @copyright  	2018 ILD, Fachhochschule Lübeck (https://www.fh-luebeck.de/ild)
- * @author		Eugen Ebel (eugen.ebel@fh-luebeck.de)
- * @license    	http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     local_ildsessioncheck
+ * @copyright   2018 Eugen Ebel, ILD, Technische Hochschule Lübeck, <eugen.ebel@th-luebeck.de>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
  */
- 
- require_once($CFG->libdir . "/externallib.php");
- 
- class local_ildsessioncheck_external extends external_api {
+
+defined('MOODLE_INTERNAL') || die;
+
+require_once($CFG->libdir . "/externallib.php");
+
+class local_ildsessioncheck_external extends external_api
+{
     /**
      * Returns description of method parameters
      * @return external_function_parameters
      */
     public static function check_session_parameters() {
-        return new external_function_parameters(array(
-            
-        ));
+        return new external_function_parameters(array());
     }
 
     /**
@@ -42,14 +42,14 @@
      * @return array user data
      */
     public static function check_session() {
-		self::validate_parameters(self::check_session_parameters(),
+        self::validate_parameters(self::check_session_parameters(),
             array());
-		
-		if(isloggedin()) {
-			$status = 1;
-		} else {
-			$status = 0;
-		}
+
+        if (isloggedin()) {
+            $status = 1;
+        } else {
+            $status = 0;
+        }
 
         $response = array(
             'status' => $status

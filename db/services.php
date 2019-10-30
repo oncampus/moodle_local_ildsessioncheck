@@ -17,14 +17,15 @@
 /**
  * Web service local plugin template external functions and service definitions.
  *
- * @package    	local
- * @subpackage 	local_ildsessioncheck
- * @copyright  	2018 ILD, Fachhochschule Lübeck (https://www.fh-luebeck.de/ild)
- * @author		Eugen Ebel (eugen.ebel@fh-luebeck.de)
- * @license    	http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     local_ildsessioncheck
+ * @copyright   2018 Eugen Ebel, ILD, Technische Hochschule Lübeck, <eugen.ebel@th-luebeck.de>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
  */
- 
- // We defined the web service functions to install.
+
+defined('MOODLE_INTERNAL') || die;
+
+// We defined the web service functions to install.
 $functions = array(
     'local_ildsessioncheck_check_session' => array(
         'classname' => 'local_ildsessioncheck_external',

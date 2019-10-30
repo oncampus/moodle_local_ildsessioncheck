@@ -17,11 +17,10 @@
 /**
  * Local Session Check
  *
- * @package    	local
- * @subpackage 	local_ildsessioncheck
- * @copyright  	2018 ILD, Fachhochschule Lübeck (https://www.fh-luebeck.de/ild)
- * @author		Eugen Ebel (eugen.ebel@fh-luebeck.de)
- * @license    	http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     local_ildsessioncheck
+ * @copyright   2018 Eugen Ebel, ILD, Technische Hochschule Lübeck, <eugen.ebel@th-luebeck.de>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
  */
- 
- $string['pluginname'] = 'SessionCheck';
+
+$string['pluginname'] = 'SessionCheck';

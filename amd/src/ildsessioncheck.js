@@ -40,6 +40,17 @@ define(['jquery', 'core/ajax', 'core/modal_factory'], function ($, ajax, ModalFa
     return {
         init: function () {
             poll_status();
+
+            $(window).on('beforeunload', function () {
+                ModalFactory.create({
+                    title: 'Reload',
+                    body: '<p>Wenn Sie die Website neuladen, werden bisher erzielte Ergebnisse überschrieben! '
+                    + 'Möchten Sie die Website trotzdem neuladen?</p>',
+                }, trigger)
+                    .done(function (modal) {
+                        modal.show();
+                    });
+            });
         }
     };
 });

@@ -17,15 +17,16 @@
 /**
  * Local Session Check
  *
- * @package    	local
- * @subpackage 	local_ildsessioncheck
- * @copyright  	2018 ILD, Fachhochschule Lübeck (https://www.fh-luebeck.de/ild)
- * @author		Eugen Ebel (eugen.ebel@fh-luebeck.de)
- * @license    	http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     local_ildsessioncheck
+ * @copyright   2018 Eugen Ebel, ILD, Technische Hochschule Lübeck, <eugen.ebel@th-luebeck.de>
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
  */
 
-$plugin->version  = 2018083000;
-$plugin->requires = 2011033010;
+defined('MOODLE_INTERNAL') || die;
+
+$plugin->version = 2018083000;
+$plugin->requires = 2018051700;
 $plugin->release = '1.0 (Build: 2018083000)';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->component = 'local_ildsessioncheck';
