@@ -1,4 +1,4 @@
-#SessionCheck
+# SessionCheck
 
 The SessionCheck plugin will check and update the current session in
 the background.
@@ -6,7 +6,7 @@ the background.
 With the plugin you avoid a session timeout and the loss of the 
 progress while working on a larger SCORM package.
 
-##Usage
+## Usage
 Just clone or download the latest version from the master branch to 
 your Moodle installation and walk through the site update process or
 run the upgrade.php from command line:
