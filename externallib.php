@@ -18,7 +18,7 @@
  * External Web Service Template
  *
  * @package     local_ildsessioncheck
- * @copyright   2018 Eugen Ebel, ILD, Technische Hochschule Lübeck, <eugen.ebel@th-luebeck.de>
+ * @copyright   2018 oncampus GmbH, <support@oncampus.de>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *
  */

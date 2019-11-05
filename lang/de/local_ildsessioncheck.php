@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Web service local plugin template external functions and service definitions.
+ * Local Session Check
  *
  * @package     local_ildsessioncheck
  * @copyright   2018 oncampus GmbH, <support@oncampus.de>
@@ -23,25 +23,4 @@
  *
  */
 
-defined('MOODLE_INTERNAL') || die;
-
-// We defined the web service functions to install.
-$functions = array(
-    'local_ildsessioncheck_check_session' => array(
-        'classname' => 'local_ildsessioncheck_external',
-        'methodname' => 'check_session',
-        'classpath' => 'local/ildsessioncheck/externallib.php',
-        'description' => 'Check session, specialy for SCORM',
-        'type' => 'read',
-        'ajax' => true,
-        'loginrequired' => false
-    ),
-);
-// We define the services to install as pre-build services. A pre-build service is not editable by administrator.
-$services = array(
-    'ildsessioncheck_check_session' => array(
-        'functions' => array('local_ildsessioncheck_check_session'),
-        'restrictedusers' => 0,
-        'enabled' => 1,
-    ),
-);
+$string['pluginname'] = 'SessionCheck';

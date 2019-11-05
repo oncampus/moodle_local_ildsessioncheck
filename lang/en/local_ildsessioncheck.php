@@ -18,15 +18,9 @@
  * Local Session Check
  *
  * @package     local_ildsessioncheck
- * @copyright   2018 oncampus GmbH, <support@oncampus.de>
+ * @copyright   22018 oncampus GmbH, <support@oncampus.de>
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  *
  */
 
-defined('MOODLE_INTERNAL') || die;
-
-$plugin->version = 2018083000;
-$plugin->requires = 2018051700;
-$plugin->release = '1.0 (Build: 2018083000)';
-$plugin->maturity = MATURITY_STABLE;
-$plugin->component = 'local_ildsessioncheck';
+$string['pluginname'] = 'SessionCheck';
